@@ -1,0 +1,123 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #e9ecef; /* Фон сторінки */
+    color: #343a40; /* Колір тексту */
+}
+header, footer {
+    background-color: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Заокруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тіньовий ефект */
+}
+header h1, footer p {
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Тіньовий ефект для тексту */
+}
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.image-container {
+    position: relative;
+    width: 800px; /* Збільшення ширини контейнера */
+    padding-top: 18%; /* Зменшення висоти при збереженні співвідношення сторін 16:9 */
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s; /* Переходи для анімації */
+}
+.image-container:hover {
+    transform: scale(1.05); /* Анімація при наведенні */
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Зберігає співвідношення сторін, заповнюючи контейнер */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* Колір фону таблиці */
+    border-radius: 10px; /* Заокруглені кути таблиці */
+    overflow: hidden; /* Сховати краї таблиці */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тіньовий ефект таблиці */
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+/* Сусідні селектори */
+h2, h3 {
+    margin-top: 20px;
+    color: #007bff; /* Колір заголовків */
+    border-bottom: 2px solid #007bff; /* Підкреслення заголовків */
+    padding-bottom: 5px;
+}
+ol {
+    list-style-type: none; /* Приховує стандартні маркери списку */
+    padding: 0;
+}
+ol li {
+    background-color: #e2e3e5; /* Колір фону пунктів списку */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px; /* Заокруглені кути для пунктів списку */
+    transition: background-color 0.3s; /* Переходи для зміни фону */
+}
+ol li:hover {
+    background-color: #ced4da; /* Зміна фону при наведенні */
+}
+/* Селектори класу */
+.feedback-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+/* Селектори ідентифікаторів */
+#name, #email, #message {
+    width: calc(100% - 20px); /* Ширина для полів введення */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s; /* Переходи для зміни кольору рамки */
+}
+#name:focus, #email:focus, #message:focus {
+    border-color: #007bff; /* Колір рамки при фокусі */
+}
+/* Універсальний селектор */
+* {
+    box-sizing: border-box; /* Включає padding та border в загальну ширину/висоту */
+}
+/* Стилі для кнопок */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Переходи для кнопки */
+}
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Зміна фону кнопки при наведенні */
+}

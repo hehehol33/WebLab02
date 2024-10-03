@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Порівняння основних бойових танків СРСР і України">
+    <title>ОБТ Радянського Союзу та України</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Підключення CSS файлу -->
+</head>
+<body>
+
+    <!-- Хедер сторінки -->
+    <header>
+        
+    </header>
+
+    <!-- Основний контент сторінки -->
+    <main>
+        <h2>Історія та порівняння ОБТ</h2>
+
+        <!-- Секція з зображеннями танків -->
+        <section class="image-section">
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/T-64B1_-_Patriot_Museum%2C_Kubinka_%2838415818576%29.jpg" alt="Т-64" title="Танк Т-64">
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/T72_cfb_borden_1.JPG" alt="Т-72" title="Танк Т-72">
+            </div>
+            <div class="image-container">
+                <img src="https://s.mediasalt.ru/cache/content/data/images/353/353802/fixed1480x800_092048419a82f47150d4dc50d987e98f.jpg" alt="Т-80" title="Танк Т-80">
+            </div>
+        </section>
+
+        <!-- Порівняльна таблиця -->
+        <h3>Порівняння основних характеристик</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Модель танка</th>
+                    <th>Виробник</th>
+                    <th>Маса (тонн)</th>
+                    <th>Озброєння</th>
+                    <th>Бронювання</th>
+                    <th>Двигун (к.с)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Т-64А</td>
+                    <td>ХКБМ</td>
+                    <td>38</td>
+                    <td>125 мм гармата 2А26</td>
+                    <td>Комбінована броня, башта - 150+150+40, корпус 80+105+20 </td>
+                    <td>5ТДФ, 700 к.с</td>
+                </tr>
+                <tr>
+                    <td>Т-64БВ</td>
+                    <td>ХКБМ</td>
+                    <td>42,4</td>
+                    <td>125 мм гармата 2А46М-1</td>
+                    <td>Комбінована броня, башта - 150+150+40, корпус - 120+105+40, ДЗ "Контакт-1"</td>
+                    <td>5ТДФ, 700 к.с</td>
+                </tr>
+                <tr>
+                    <td>Т-72АВ</td>
+                    <td>УВЗ</td>
+                    <td>41</td>
+                    <td>125 мм гармата 2А46М</td>
+                    <td>Комбінована броня, башта - 450-395, корпус - 60+105+50</td>
+                    <td>В-84-1, 840 к.с</td>
+                </tr>
+                <tr>
+                    <td>Т-80У</td>
+                    <td>УКБТМ</td>
+                    <td>46</td>
+                    <td>125 мм гармата 2А46М-1</td>
+                    <td>Комбінована броня, реактивний захист ДЗ "Контакт-5"</td>
+                    <td>ГТД-1250, 1250 к.с</td>
+                </tr>
+                <tr>
+                    <td>Т-84У</td>
+                    <td>ХКБМ</td>
+                    <td>48</td>
+                    <td>125 мм гармата КБА3</td>
+                    <td>Комбінована броня, реактивний захист ДЗ "Ніж"</td>
+                    <td>6ТД-2, 1200 к.с</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Списки з інформацією про танки -->
+        <h3>Інформація про кожен танк</h3>
+        <ol>
+            <li><b>Т-64А:</b> перший радянський танк з багатошаровою бронею та автоматом заряджання, розроблений у 1960-х роках.</li>
+            <li><b>Т-64БВ:</b> модернізована версія Т-64А з додатковим динамічним захистом "Контакт-1".</li>
+            <li><b>Т-72АВ:</b> версія Т-72А з додатковими елементами захисту та більш потужним двигуном.</li>
+            <li><b>Т-80У:</b> танк з газотурбінним двигуном, що відзначається високою швидкістю та сучасними системами захисту.</li>
+            <li><b>Т-84У:</b> українська модернізація Т-80У, оснащена реактивним захистом "Ніж" та потужнішим двигуном.</li>
+        </ol>
+
+        <!-- Форма для зворотнього зв'язку -->
+        <h3>Зворотній зв'язок</h3>
+        <form action="/submit-feedback" method="post" class="feedback-form">
+            <label for="name">Ім'я:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Ваше повідомлення:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Надіслати">
+        </form>
+    </main>
+
+    <!-- Футер сторінки -->
+    <footer>
+       
+    </footer>
+
+</body>
+</html>
